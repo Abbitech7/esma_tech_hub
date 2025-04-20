@@ -1,0 +1,26 @@
+{
+  "name": "esma-tech-hub",
+  "version": "1.0.0",
+  "description": "Blog website Esma Tech Hub",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Abbitech7"
+  },
+  "license": "ISC",
+  "author": "Esmail Taju",
+  "type": "commonjs",
+  "main": "backend/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.14.0",
+    "path": "^0.12.7"
+  }
+}

@@ -1,0 +1,59 @@
+<%- include('partials/header') %>
+
+<section class="about-hero">
+    <div class="overlay">
+        <h1>Contact Us</h1>
+        <h2>We’d love to hear from you. Whether you have a question, feedback, or want to collaborate—reach out to us!</h2>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="contact-info">
+        <div>
+            <a href="https://www.facebook.com/esmabothub" target="_blank" rel="noopener noreferrer">
+                <p><i class="fab fa-facebook-f"></i></p>
+                <h2>Facebook</h2>
+            </a>
+        </div>
+        <div>
+            <a href="mailto:esmatechhub@gmail.com">
+                <p><i class="fas fa-envelope"></i></p>
+                <h2>Email</h2>
+            </a>
+        </div>
+        <div>
+            <a href="https://t.me/esmabothub" target="_blank" rel="noopener noreferrer">
+                <p><i class="fab fa-telegram-plane"></i></p>
+                <h2>Telegram</h2>
+            </a>
+        </div>
+    </div>
+    <div class="contact-container">
+        <div class="contact-header">
+            <h1>Get in Touch</h1>
+            <p>We’re here to help you with any inquiries or feedback you may have. Fill out the form below, and we’ll get back to you as soon as possible.</p>
+        </div>
+      <form action="/contact" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" name="name" id="name" required placeholder="Your Name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" required placeholder="Your Email" />
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" name="subject" id="subject" placeholder="Subject (Optional)" />
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea name="message" id="message" rows="6" required placeholder="Write your message here..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>
